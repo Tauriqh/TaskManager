@@ -5,8 +5,8 @@ import org.junit.Before;
 import org.junit.Test;
 import za.ac.cput.Domain.SpecificTasks.Assignment;
 
-import java.util.ArrayList;
-import java.util.Set;
+import java.util.LinkedList;
+import java.util.List;
 
 public class AssignmentFactoryTest {
 
@@ -14,7 +14,7 @@ public class AssignmentFactoryTest {
     private String assignmentName;
     private String dueDate;
     private boolean complete;
-    private Set<String> taskId;
+    private List<String> taskId = new LinkedList<>();
 
     @Before
     public void setUp() throws Exception {

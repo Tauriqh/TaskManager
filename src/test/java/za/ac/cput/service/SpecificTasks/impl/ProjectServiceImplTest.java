@@ -8,17 +8,14 @@ import za.ac.cput.Factory.SpecificTasks.ProjectFactory;
 import za.ac.cput.repository.SpecificTasks.ProjectRepository;
 import za.ac.cput.repository.SpecificTasks.impl.ProjectRepositoryImpl;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 import static org.junit.Assert.*;
 
 public class ProjectServiceImplTest {
     private ProjectRepository repository;
     private Project project;
-    private Set<String> taskId;
+    private List<String> taskId = new LinkedList<>();
 
     private Project getSaved() {
         return this.repository.getAll().iterator().next();
@@ -36,7 +33,7 @@ public class ProjectServiceImplTest {
     @Test
     public void create() {
         Project info = this.repository.create(this.project);
-        System.out.println("In create, created = " + info);
+        //System.out.println("In create, created = " + info);
         Assert.assertSame(info, this.project);
     }
 
@@ -44,7 +41,7 @@ public class ProjectServiceImplTest {
     public void read() {
         Project saved = getSaved();
         Project read = this.repository.read(saved.getProjectId());
-        System.out.println("In read, read = " + read);
+        //System.out.println("In read, read = " + read);
         Assert.assertEquals(saved, read);
     }
 
@@ -52,7 +49,7 @@ public class ProjectServiceImplTest {
     public void update() {
         boolean updateString = true;
         Project project = new Project.Builder().copy(getSaved()).complete(updateString).build();
-        System.out.println("In update, about_to_updated = " + project);
+        //System.out.println("In update, about_to_updated = " + project);
         this.repository.update(project);
         Assert.assertSame(updateString, project.getComplete());
     }
@@ -67,6 +64,6 @@ public class ProjectServiceImplTest {
     @Test
     public void d_getAll() {
         Set<Project> all = this.repository.getAll();
-        System.out.println("In getAll, all = " + all);
+        //System.out.println("In getAll, all = " + all);
     }
 }

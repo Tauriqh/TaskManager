@@ -7,6 +7,7 @@ import za.ac.cput.Domain.SpecificTasks.Assignment;
 import za.ac.cput.Factory.SpecificTasks.AssignmentFactory;
 import za.ac.cput.service.SpecificTasks.AssignmentService;
 
+import java.util.List;
 import java.util.Set;
 
 @RestController
@@ -16,16 +17,20 @@ public class AssignmentController {
     @Qualifier("assignmentServiceImpl")
     private AssignmentService service;
 
-    @PostMapping("/create/{assignmentId, assignmentName, dueDate, complete, tasks}")
+    //@PostMapping("/create/{assignmentId, assignmentName, dueDate, complete, tasks}")
+    @PostMapping("/create}")
     @ResponseBody
-    public Assignment create(@PathVariable String assignmentId, String assignmentName, String dueDate, boolean complete, Set<String> tasks) {
-        Assignment assignment = AssignmentFactory.buildAssignment(assignmentId, assignmentName, dueDate, complete, tasks);
+    //public Assignment create(@PathVariable String assignmentId, String assignmentName, String dueDate, boolean complete, List<String> tasks) {
+    public Assignment create(@RequestBody Assignment assignment) {
+        //Assignment assignment = AssignmentFactory.buildAssignment(assignmentId, assignmentName, dueDate, complete, tasks);
+        //return service.create(assignment);
         return service.create(assignment);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
-    public  Assignment update( Assignment assignment) {
+    //public  Assignment update( Assignment assignment) {
+    public  Assignment update(@RequestBody Assignment assignment) {
         return service.update(assignment);
     }
 

@@ -8,16 +8,13 @@ import za.ac.cput.Factory.SpecificTasks.ProjectFactory;
 import za.ac.cput.repository.SpecificTasks.ProjectRepository;
 import za.ac.cput.repository.SpecificTasks.impl.ProjectRepositoryImpl;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class ProjectRepositoryImplTest {
 
     private ProjectRepository repository;
     private Project project;
-    private Set<String> taskId;
+    private List<String> taskId = new LinkedList<>();
 
     private Project getSaved() {
         Set<Project> saved = this.repository.getAll();
@@ -44,7 +41,7 @@ public class ProjectRepositoryImplTest {
     public void read() {
         Project saved = getSaved();
         Project read = this.repository.read(saved.getProjectId());
-        System.out.println("In read, read = " + read);
+        //System.out.println("In read, read = " + read);
         Assert.assertEquals(saved, read);
         d_getAll();
     }
@@ -53,9 +50,9 @@ public class ProjectRepositoryImplTest {
     public void update() {
         boolean updateString = true;
         Project project = new Project.Builder().copy(getSaved()).complete(updateString).build();
-        System.out.println("In update, about_to_updated = " + project);
+        //System.out.println("In update, about_to_updated = " + project);
         Project updated = this.repository.update(project);
-        System.out.println("In update, updated = " + updated);
+        //System.out.println("In update, updated = " + updated);
         Assert.assertSame(updateString, updated.getComplete());
         d_getAll();
     }
@@ -73,7 +70,7 @@ public class ProjectRepositoryImplTest {
     @Test
     public void d_getAll() {
         Set<Project> all = this.repository.getAll();
-        System.out.println("In getAll, all = " + all);
+        //System.out.println("In getAll, all = " + all);
         //Assert.assertEquals(1, projects.size());
     }
 }

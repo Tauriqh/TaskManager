@@ -4,6 +4,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import za.ac.cput.Domain.Tasks.Task;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
@@ -13,7 +14,7 @@ public class Project {
     private String projectName;
     private String dueDate;
     private boolean complete;
-    private Set<String> tasks;
+    private List<String> tasks;
 
     private Project(){}
 
@@ -41,7 +42,7 @@ public class Project {
         return complete;
     }
 
-    public Set<String> getTaskId() {
+    public List<String> getTaskId() {
         return tasks;
     }
 
@@ -51,7 +52,7 @@ public class Project {
         private String projectName;
         private String dueDate;
         private boolean complete;
-        private Set<String> tasks;
+        private List<String> tasks;
 
         public Builder projectId(String projectId) {
             this.projectId = projectId;
@@ -73,7 +74,7 @@ public class Project {
             return this;
         }
 
-        public Builder tasks(Set<String> tasks) {
+        public Builder tasks(List<String> tasks) {
             this.tasks = tasks;
             return this;
         }

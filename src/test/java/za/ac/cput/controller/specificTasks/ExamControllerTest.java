@@ -12,11 +12,10 @@ import org.springframework.web.client.HttpClientErrorException;
 import za.ac.cput.Domain.SpecificTasks.Exam;
 import za.ac.cput.Factory.SpecificTasks.ExamFactory;
 
-import java.util.Set;
+import java.util.List;
 
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertNotNull;
-import static org.junit.Assert.*;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @RunWith(SpringRunner.class)
@@ -44,7 +43,7 @@ public class ExamControllerTest {
 
     @Ignore
     public void testCreate() {
-        Set<String> taskId = null;
+        List<String> taskId = null;
         taskId.add("10");
         taskId.add("11");
         taskId.add("12");

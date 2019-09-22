@@ -42,7 +42,7 @@ public class EmailRepositoryImplTest {
     public void read() {
         Email saved = getSaved();
         Email read = this.repository.read(saved.getEmailAddressd());
-        System.out.println("In read, read = " + read);
+        //System.out.println("In read, read = " + read);
         Assert.assertEquals(saved, read);
         d_getAll();
 
@@ -52,9 +52,9 @@ public class EmailRepositoryImplTest {
     public void update() {
         String updateString = "henry@gmail.com";
         Email email = new Email.Builder().copy(getSaved()).emailAddress(updateString).build();
-        System.out.println("In update, about_to_updated = " + email);
+        //System.out.println("In update, about_to_updated = " + email);
         Email updated = this.repository.update(email);
-        System.out.println("In update, updated = " + updated);
+        //System.out.println("In update, updated = " + updated);
         //Assert.assertSame(updateString, updated.getEmailAddressd());
         d_getAll();
     }
@@ -72,7 +72,7 @@ public class EmailRepositoryImplTest {
     @Test
     public void d_getAll() {
         Set<Email> all = this.repository.getAll();
-        System.out.println("In getAll, all = " + all);
+        //System.out.println("In getAll, all = " + all);
         //Assert.assertEquals(1, emails.size());
     }
 }

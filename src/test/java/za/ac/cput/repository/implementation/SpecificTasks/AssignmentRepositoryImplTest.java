@@ -8,16 +8,16 @@ import za.ac.cput.Factory.SpecificTasks.AssignmentFactory;
 import za.ac.cput.repository.SpecificTasks.AssignmentRepository;
 import za.ac.cput.repository.SpecificTasks.impl.AssignmentRepositoryImpl;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
+
 
 public class AssignmentRepositoryImplTest {
 
     private AssignmentRepository repository;
     private Assignment assignment;
-    private Set<String> taskId;
+    private List<String> taskId = new LinkedList<>();
 
     private Assignment getSaved() {
         Set<Assignment> saved = this.repository.getAll();
@@ -45,7 +45,7 @@ public class AssignmentRepositoryImplTest {
     public void read() {
         Assignment saved = getSaved();
         Assignment read = this.repository.read(saved.getAssignmentId());
-        System.out.println("In read, read = " + read);
+        //System.out.println("In read, read = " + read);
         Assert.assertEquals(saved, read);
         d_getAll();
     }
@@ -54,9 +54,9 @@ public class AssignmentRepositoryImplTest {
     public void update() {
         boolean updateString = true;
         Assignment assignment = new Assignment.Builder().copy(getSaved()).complete(updateString).build();
-        System.out.println("In update, about_to_updated = " + assignment);
+        //System.out.println("In update, about_to_updated = " + assignment);
         Assignment updated = this.repository.update(assignment);
-        System.out.println("In update, updated = " + updated);
+        //System.out.println("In update, updated = " + updated);
         Assert.assertSame(updateString, updated.getComplete());
         d_getAll();
     }
@@ -74,7 +74,7 @@ public class AssignmentRepositoryImplTest {
     @Test
     public void d_getAll() {
         Set<Assignment> all = this.repository.getAll();
-        System.out.println("In getAll, all = " + all);
+        //System.out.println("In getAll, all = " + all);
         //Assert.assertEquals(1, users.size());
     }
 }

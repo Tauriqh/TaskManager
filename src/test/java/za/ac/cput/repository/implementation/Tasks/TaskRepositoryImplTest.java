@@ -39,7 +39,7 @@ public class TaskRepositoryImplTest {
     public void read() {
         Task saved = getSaved();
         Task read = this.repository.read(saved.getTaskId());
-        System.out.println("In read, read = " + read);
+        //System.out.println("In read, read = " + read);
         Assert.assertEquals(saved, read);
         d_getAll();
     }
@@ -48,9 +48,9 @@ public class TaskRepositoryImplTest {
     public void update() {
         String updateString = "Design the interface";
         Task task = new Task.Builder().copy(getSaved()).taskDesc(updateString).build();
-        System.out.println("In update, about_to_updated = " + task);
+        //System.out.println("In update, about_to_updated = " + task);
         Task updated = this.repository.update(task);
-        System.out.println("In update, updated = " + updated);
+        //System.out.println("In update, updated = " + updated);
         Assert.assertSame(updateString, updated.getTaskDesc());
         d_getAll();
     }
@@ -68,7 +68,7 @@ public class TaskRepositoryImplTest {
     @Test
     public void d_getAll() {
         Set<Task> all = this.repository.getAll();
-        System.out.println("In getAll, all = " + all);
+        //System.out.println("In getAll, all = " + all);
         //Assert.assertEquals(1, TaskController.size());
     }
 }

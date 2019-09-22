@@ -1,5 +1,6 @@
 package za.ac.cput.controller.specificTasks;
 
+import junit.framework.TestCase;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,19 +12,33 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.HttpClientErrorException;
 import za.ac.cput.Domain.SpecificTasks.Assignment;
 import za.ac.cput.Factory.SpecificTasks.AssignmentFactory;
+import org.springframework.http.*;
+import org.springframework.test.context.ContextConfiguration;
+import java.util.List;
 
-import java.util.Set;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.http.*;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.web.client.HttpClientErrorException;
+import za.ac.cput.TaskManagerApplication;
 
 import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertNotNull;
-import static org.junit.Assert.*;
 
+@ContextConfiguration(classes = TaskManagerApplication.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @RunWith(SpringRunner.class)
 public class AssignmentControllerTest {
     @Autowired
     private TestRestTemplate restTemplate;
-    private String baseURL="http://localhost:8080/assignment";
+    private String baseURL="http://localhost:8080/lookup/assignment";
 
     @Test
     public void testGetAll() {
@@ -32,7 +47,9 @@ public class AssignmentControllerTest {
         HttpEntity<String> entity = new HttpEntity<String>(null, headers);
         ResponseEntity<String> response = restTemplate.exchange(baseURL + "/read/all",
                 HttpMethod.GET, entity, String.class);
-        assertNotNull(response.getBody());
+        //assertNotNull(response.getBody());
+        TestCase.assertNotNull(response.getBody());
+        System.out.println(response.getBody());
     }
 
     @Ignore
@@ -44,7 +61,7 @@ public class AssignmentControllerTest {
 
     @Ignore
     public void testCreate() {
-        Set<String> taskId = null;
+        List<String> taskId = null;
         taskId.add("1");
         taskId.add("2");
         taskId.add("3");

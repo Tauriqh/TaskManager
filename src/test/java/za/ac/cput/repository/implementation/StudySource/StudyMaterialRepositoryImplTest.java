@@ -39,7 +39,7 @@ public class StudyMaterialRepositoryImplTest {
     public void read() {
         StudyMaterial saved = getSaved();
         StudyMaterial read = this.repository.read(saved.getMaterialId());
-        System.out.println("In read, read = " + read);
+        //System.out.println("In read, read = " + read);
         Assert.assertEquals(saved, read);
         d_getAll();
     }
@@ -48,9 +48,9 @@ public class StudyMaterialRepositoryImplTest {
     public void update() {
         String updateString = "Harry Potter";
         StudyMaterial studyMaterial = new StudyMaterial.Builder().copy(getSaved()).materialDesc(updateString).build();
-        System.out.println("In update, about_to_updated = " + studyMaterial);
+        //System.out.println("In update, about_to_updated = " + studyMaterial);
         StudyMaterial updated = this.repository.update(studyMaterial);
-        System.out.println("In update, updated = " + updated);
+        //System.out.println("In update, updated = " + updated);
         Assert.assertSame(updateString, updated.getMaterialDesc());
         d_getAll();
     }
@@ -68,7 +68,7 @@ public class StudyMaterialRepositoryImplTest {
     @Test
     public void d_getAll() {
         Set<StudyMaterial> all = this.repository.getAll();
-        System.out.println("In getAll, all = " + all);
+        //System.out.println("In getAll, all = " + all);
         //Assert.assertEquals(1, users.size());
     }
 }

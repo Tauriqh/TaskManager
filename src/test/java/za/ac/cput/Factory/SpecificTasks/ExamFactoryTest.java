@@ -5,7 +5,8 @@ import org.junit.Before;
 import org.junit.Test;
 import za.ac.cput.Domain.SpecificTasks.Exam;
 
-import java.util.Set;
+import java.util.LinkedList;
+import java.util.List;
 
 public class ExamFactoryTest {
 
@@ -14,7 +15,7 @@ public class ExamFactoryTest {
     private String dueDate;
     private boolean complete;
     private String materialId;
-    private Set<String> taskId;
+    private List<String> taskId = new LinkedList<>();
 
     @Before
     public void setUp() throws Exception {

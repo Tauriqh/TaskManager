@@ -7,6 +7,7 @@ import za.ac.cput.Domain.SpecificTasks.Tests;
 import za.ac.cput.Factory.SpecificTasks.TestsFactory;
 import za.ac.cput.service.SpecificTasks.TestService;
 
+import java.util.List;
 import java.util.Set;
 
 @RestController
@@ -18,7 +19,7 @@ public class TestsController {
 
     @PostMapping("/create/{testId, testName, dueDate, complete, materialId, tasks}")
     @ResponseBody
-    public Tests create(@PathVariable String testId, String testName, String dueDate, boolean complete, String materialId, Set<String> tasks) {
+    public Tests create(@PathVariable String testId, String testName, String dueDate, boolean complete, String materialId, List<String> tasks) {
         Tests tests = TestsFactory.buildTest(testId, testName, dueDate, complete, materialId, tasks);
         return service.create(tests);
     }

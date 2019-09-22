@@ -1,12 +1,11 @@
 package za.ac.cput.Factory.SpecificTasks;
 
 import za.ac.cput.Domain.SpecificTasks.Assignment;
-import za.ac.cput.Domain.Tasks.Task;
 
-import java.util.Set;
+import java.util.List;
 
 public class AssignmentFactory {
-    public static Assignment buildAssignment(String assignmentId, String assignmentName, String dueDate, boolean complete, Set<String> tasks) {
+    public static Assignment buildAssignment(String assignmentId, String assignmentName, String dueDate, boolean complete, List<String> tasks) {
         return new Assignment.Builder()
                 .assignmentId(assignmentId)
                 .assignmentName(assignmentName)

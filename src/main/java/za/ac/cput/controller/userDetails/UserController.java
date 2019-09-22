@@ -17,34 +17,51 @@ public class UserController {
     @Qualifier("userServiceImpl")
     private UserService service;
 
-    @PostMapping("/create/{userId,firstName,lastName}")
+    @PostMapping("/create/{firstName},{lastName}")
+    //@RequestMapping(value="/create/{firstName}/{lastName}", method=RequestMethod.POST)
     @ResponseBody
-    public User create(@PathVariable String userId, String firstName, String lastName) {
-        User user = UserFactory.buildUser(userId, firstName, lastName);
+    public User create(@PathVariable String firstName, @PathVariable String lastName) {
+        User user = UserFactory.buildUser(firstName, lastName);
         return service.create(user);
+        //return firstName + lastName;
     }
 
-    @PostMapping("/update")
+    /* @PostMapping("/create/**")
     @ResponseBody
-    public User update(User user) {
-        return service.update(user);
+    public HttpServletRequest create(@PathVariable HttpServletRequest request) {
+        String ii = Ser
+        User user = UserFactory.buildUser(firstName, lastName);
+    //return service.create(user);
+        return request;
+    }*/
+
+    /*@PostMapping("/create")
+    @ResponseBody
+    public User create(@RequestBody User user){
+        return this.service.create(user);
+    }*/
+
+    @PutMapping("/update")
+    @ResponseBody
+    public User update(@RequestBody User user) {
+        return this.service.update(user);
     }
 
     @GetMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id) {
-        service.delete(id);
+        this.service.delete(id);
     }
 
     @GetMapping("/read/{id}")
     @ResponseBody
     public User read(@PathVariable String id) {
-        return service.read(id);
+        return this.service.read(id);
     }
 
     @GetMapping("/read/all")
     @ResponseBody
     public Set<User> getAll() {
-        return service.getAll();
+        return this.service.getAll();
     }
 }

@@ -32,7 +32,7 @@ public class TeamMemberTaskServiceImplTest {
     @Test
     public void create() {
         TeamMemberTask info = this.repository.create(this.teamMemberTask);
-        System.out.println("In create, created = " + info);
+        //System.out.println("In create, created = " + info);
         Assert.assertNotNull(info);
         Assert.assertSame(info, this.teamMemberTask);
     }
@@ -41,7 +41,7 @@ public class TeamMemberTaskServiceImplTest {
     public void read() {
         TeamMemberTask saved = getSaved();
         TeamMemberTask read = this.repository.read(saved.getTaskId());
-        System.out.println("In read, read = " + read);
+        //System.out.println("In read, read = " + read);
         Assert.assertEquals(saved, read);
     }
 
@@ -49,7 +49,7 @@ public class TeamMemberTaskServiceImplTest {
     public void update() {
         String updateString = "Code the interface";
         TeamMemberTask updated = new TeamMemberTask.Builder().copy(getSaved()).taskDesc(updateString).build();
-        System.out.println("In update, updated = " + updated);
+        //System.out.println("In update, updated = " + updated);
         this.repository.update(updated);
         Assert.assertSame(updateString, updated.getTaskDesc());
     }
@@ -64,7 +64,7 @@ public class TeamMemberTaskServiceImplTest {
     @Test
     public void d_getAll() {
         Set<TeamMemberTask> all = this.repository.getAll();
-        System.out.println("In getAll, all = " + all);
+        //System.out.println("In getAll, all = " + all);
         //Assert.assertEquals(1, teamMemberTasks.size());
     }
 }

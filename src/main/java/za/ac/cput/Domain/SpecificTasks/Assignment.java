@@ -1,11 +1,9 @@
 package za.ac.cput.Domain.SpecificTasks;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
-import za.ac.cput.Domain.Tasks.Task;
 
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
-import java.util.Set;
 
 @EntityScan
 public class Assignment {
@@ -13,7 +11,7 @@ public class Assignment {
     private String assignmentName;
     private String dueDate;
     private boolean complete;
-    private Set<String> tasks;
+    private List<String> tasks;
 
     private Assignment(){}
 
@@ -41,7 +39,7 @@ public class Assignment {
         return complete;
     }
 
-    public Set<String> getTaskId() {
+    public List<String> getTaskId() {
         return tasks;
     }
 
@@ -51,7 +49,7 @@ public class Assignment {
         private String assignmentName;
         private String dueDate;
         private boolean complete;
-        private Set<String> tasks;
+        private List<String> tasks;
 
         public Builder assignmentId( String assignmentId) {
             this.assignmentId = assignmentId;
@@ -73,7 +71,7 @@ public class Assignment {
             return this;
         }
 
-        public Builder tasks(Set<String> tasks) {
+        public Builder tasks(List<String> tasks) {
             this.tasks = tasks;
             return this;
         }

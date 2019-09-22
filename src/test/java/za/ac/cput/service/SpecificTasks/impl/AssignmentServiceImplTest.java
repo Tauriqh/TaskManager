@@ -8,18 +8,16 @@ import za.ac.cput.Factory.SpecificTasks.AssignmentFactory;
 import za.ac.cput.repository.SpecificTasks.AssignmentRepository;
 import za.ac.cput.repository.SpecificTasks.impl.AssignmentRepositoryImpl;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
-import static org.junit.Assert.*;
 
 public class AssignmentServiceImplTest {
 
     private AssignmentRepository repository;
     private Assignment assignment;
-    private Set<String> taskId;
+    private List<String> taskId = new LinkedList<>();
 
     private Assignment getSaved() {
         return this.repository.getAll().iterator().next();
@@ -37,7 +35,7 @@ public class AssignmentServiceImplTest {
     @Test
     public void create() {
         Assignment info = this.repository.create(this.assignment);
-        System.out.println("In create, created = " + info);
+        //System.out.println("In create, created = " + info);
         Assert.assertSame(info, this.assignment);
     }
 
@@ -45,7 +43,7 @@ public class AssignmentServiceImplTest {
     public void read() {
         Assignment saved = getSaved();
         Assignment read = this.repository.read(saved.getAssignmentId());
-        System.out.println("In read, read = " + read);
+        //System.out.println("In read, read = " + read);
         Assert.assertEquals(saved, read);
     }
 
@@ -53,7 +51,7 @@ public class AssignmentServiceImplTest {
     public void update() {
         boolean updateString = true;
         Assignment assignment = new Assignment.Builder().copy(getSaved()).complete(updateString).build();
-        System.out.println("In update, about_to_updated = " + assignment);
+        //System.out.println("In update, about_to_updated = " + assignment);
         this.repository.update(assignment);
         Assert.assertSame(updateString, assignment.getComplete());
     }
@@ -68,6 +66,6 @@ public class AssignmentServiceImplTest {
     @Test
     public void d_getAll() {
         Set<Assignment> all = this.repository.getAll();
-        System.out.println("In getAll, all = " + all);
+        //System.out.println("In getAll, all = " + all);
     }
 }

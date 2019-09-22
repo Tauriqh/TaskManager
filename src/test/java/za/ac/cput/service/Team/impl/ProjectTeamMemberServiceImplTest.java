@@ -32,7 +32,7 @@ public class ProjectTeamMemberServiceImplTest {
     @Test
     public void create() {
         ProjectTeamMember info = this.repository.create(this.projectTeamMember);
-        System.out.println("In create, created = " + info);
+        //System.out.println("In create, created = " + info);
         Assert.assertSame(info, this.projectTeamMember);
     }
 
@@ -40,7 +40,7 @@ public class ProjectTeamMemberServiceImplTest {
     public void read() {
         ProjectTeamMember saved = getSaved();
         ProjectTeamMember read = this.repository.read(saved.getProjectId());
-        System.out.println("In read, read = " + read);
+        //System.out.println("In read, read = " + read);
         Assert.assertEquals(saved, read);
     }
 
@@ -48,7 +48,7 @@ public class ProjectTeamMemberServiceImplTest {
     public void update() {
         String updateString = "10";
         ProjectTeamMember projectTeamMember = new ProjectTeamMember.Builder().copy(getSaved()).memberId(updateString).build();
-        System.out.println("In update, updated = " + projectTeamMember);
+        //System.out.println("In update, updated = " + projectTeamMember);
         this.repository.update(projectTeamMember);
         Assert.assertSame(updateString, projectTeamMember.getMemberId());
     }
@@ -63,7 +63,7 @@ public class ProjectTeamMemberServiceImplTest {
     @Test
     public void d_getAll() {
         Set<ProjectTeamMember> all = this.repository.getAll();
-        System.out.println("In getAll, all = " + all);
+        //System.out.println("In getAll, all = " + all);
         //Assert.assertEquals(1, projectTeamMembers.size());
     }
 }

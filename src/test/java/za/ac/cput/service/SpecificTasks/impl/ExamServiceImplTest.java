@@ -8,17 +8,14 @@ import za.ac.cput.Factory.SpecificTasks.ExamFactory;
 import za.ac.cput.repository.SpecificTasks.ExamRepository;
 import za.ac.cput.repository.SpecificTasks.impl.ExamRepositoryImpl;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 import static org.junit.Assert.*;
 
 public class ExamServiceImplTest {
     private ExamRepository repository;
     private Exam exam;
-    private Set<String> taskId;
+    private List<String> taskId =  new LinkedList<>();
 
     private Exam getSaved() {
         return this.repository.getAll().iterator().next();
@@ -36,7 +33,7 @@ public class ExamServiceImplTest {
     @Test
     public void create() {
         Exam info = this.repository.create(this.exam);
-        System.out.println("In create, created = " + info);
+        //System.out.println("In create, created = " + info);
         Assert.assertSame(info, this.exam);
     }
 
@@ -44,7 +41,7 @@ public class ExamServiceImplTest {
     public void read() {
         Exam saved = getSaved();
         Exam read = this.repository.read(saved.getExamId());
-        System.out.println("In read, read = " + read);
+        //System.out.println("In read, read = " + read);
         Assert.assertEquals(saved, read);
     }
 
@@ -52,7 +49,7 @@ public class ExamServiceImplTest {
     public void update() {
         boolean updateString = true;
         Exam exam = new Exam.Builder().copy(getSaved()).complete(updateString).build();
-        System.out.println("In update, about_to_updated = " + exam);
+        //System.out.println("In update, about_to_updated = " + exam);
         this.repository.update(exam);
         Assert.assertSame(updateString, exam.getComplete());
     }
@@ -67,6 +64,6 @@ public class ExamServiceImplTest {
     @Test
     public void d_getAll() {
         Set<Exam> all = this.repository.getAll();
-        System.out.println("In getAll, all = " + all);
+        //System.out.println("In getAll, all = " + all);
     }
 }

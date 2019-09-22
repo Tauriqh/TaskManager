@@ -12,6 +12,7 @@ import org.springframework.web.client.HttpClientErrorException;
 import za.ac.cput.Domain.SpecificTasks.Tests;
 import za.ac.cput.Factory.SpecificTasks.TestsFactory;
 
+import java.util.List;
 import java.util.Set;
 
 import static junit.framework.TestCase.assertEquals;
@@ -44,7 +45,7 @@ public class TestsControllerTest {
 
     @Ignore
     public void testCreate() {
-        Set<String> taskId = null;
+        List<String> taskId = null;
         taskId.add("7");
         taskId.add("8");
         taskId.add("9");

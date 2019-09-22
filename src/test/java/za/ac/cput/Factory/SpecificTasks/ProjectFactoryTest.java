@@ -5,6 +5,8 @@ import org.junit.Before;
 import org.junit.Test;
 import za.ac.cput.Domain.SpecificTasks.Project;
 
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Set;
 
 public class ProjectFactoryTest {
@@ -13,7 +15,7 @@ public class ProjectFactoryTest {
     private String projectName;
     private String dueDate;
     private boolean complete;
-    private Set<String> taskId;
+    private List<String> taskId = new LinkedList<>();
 
     @Before
     public void setUp() throws Exception {

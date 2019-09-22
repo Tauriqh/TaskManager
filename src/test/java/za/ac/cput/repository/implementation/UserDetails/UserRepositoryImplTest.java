@@ -27,7 +27,7 @@ public class UserRepositoryImplTest {
     @Before
     public void setUp() throws Exception {
         this.repository = UserRepositoryImpl.getRepository();
-        this.user = UserFactory.buildUser("1","John","Doe");
+        this.user = UserFactory.buildUser("John","Doe");
     }
 
     @Test
@@ -41,7 +41,7 @@ public class UserRepositoryImplTest {
     public void b_read() {
         User savedUser = getSavedUser();
         User read = this.repository.read(savedUser.getUserId());
-        System.out.println("In read, read = " + read);
+        //System.out.println("In read, read = " + read);
         Assert.assertEquals(savedUser, read);
         d_getAll();
     }
@@ -50,9 +50,9 @@ public class UserRepositoryImplTest {
     public void c_update() {
         String updateString = "Hendricks";
         User user = new User.Builder().copy(getSavedUser()).lastName(updateString).build();
-        System.out.println("In update, about_to_updated = " + user);
+        //System.out.println("In update, about_to_updated = " + user);
         User updated = this.repository.update(user);
-        System.out.println("In update, updated = " + updated);
+        //System.out.println("In update, updated = " + updated);
         Assert.assertSame(updateString, updated.getLastName());
         d_getAll();
     }
@@ -70,7 +70,7 @@ public class UserRepositoryImplTest {
     @Test
     public void d_getAll() {
         Set<User> all = this.repository.getAll();
-        System.out.println("In getAll, all = " + all);
+        //System.out.println("In getAll, all = " + all);
         //Assert.assertEquals(1, users.size());
     }
 }

@@ -7,6 +7,8 @@ import za.ac.cput.Domain.SpecificTasks.Tests;
 
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Set;
 
 public class TestsFactoryTest {
@@ -16,7 +18,8 @@ public class TestsFactoryTest {
     private String dueDate;
     private boolean complete;
     private String materialId;
-    private Set<String> taskId;
+    //private Set<String> taskId;
+    private List<String> taskId = new LinkedList<>();
 
     @Before
     public void setUp() throws Exception {
@@ -25,6 +28,7 @@ public class TestsFactoryTest {
         this.dueDate = "10/03/19";
         this.complete = false;
         this.materialId = "1";
+        //this.abc.add("7");
         this.taskId.add("7");
         this.taskId.add("8");
         this.taskId.add("9");
@@ -32,7 +36,7 @@ public class TestsFactoryTest {
 
     @Test
     public void buildTest() {
-        Tests test = TestsFactory.buildTest(testId, testName, dueDate, complete, materialId, taskId);
+        Tests test = TestsFactory.buildTest(this.testId, this.testName, this.dueDate, this.complete, this.materialId, this.taskId);
         Assert.assertNotNull(test.getTestId());
         Assert.assertNotNull(test);
     }

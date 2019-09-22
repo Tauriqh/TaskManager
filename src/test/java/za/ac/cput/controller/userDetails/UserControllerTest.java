@@ -41,7 +41,7 @@ public class UserControllerTest {
 
     @Ignore
     public void testCreateStudent() {
-        User student = UserFactory.buildUser("1"," John","Doe");
+        User student = UserFactory.buildUser(" John","Doe");
 
         ResponseEntity<User> postResponse = restTemplate.postForEntity(baseURL + "/create", student, User.class);
         assertNotNull(postResponse);

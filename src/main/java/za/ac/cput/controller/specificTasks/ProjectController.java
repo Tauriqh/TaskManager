@@ -7,6 +7,7 @@ import za.ac.cput.Domain.SpecificTasks.Project;
 import za.ac.cput.Factory.SpecificTasks.ProjectFactory;
 import za.ac.cput.service.SpecificTasks.ProjectService;
 
+import java.util.List;
 import java.util.Set;
 
 @RestController
@@ -18,7 +19,7 @@ public class ProjectController {
 
     @PostMapping("/create/{projectId, projectName, dueDate, complete, tasks}")
     @ResponseBody
-    public Project create(@PathVariable String projectId, String projectName, String dueDate, boolean complete, Set<String> tasks) {
+    public Project create(@PathVariable String projectId, String projectName, String dueDate, boolean complete, List<String> tasks) {
         Project project = ProjectFactory.buildProject(projectId, projectName, dueDate, complete, tasks);
         return service.create(project);
     }

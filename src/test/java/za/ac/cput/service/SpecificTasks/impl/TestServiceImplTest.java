@@ -8,17 +8,14 @@ import za.ac.cput.Factory.SpecificTasks.TestsFactory;
 import za.ac.cput.repository.SpecificTasks.TestsRepository;
 import za.ac.cput.repository.SpecificTasks.impl.TestsRepositoryImpl;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 import static org.junit.Assert.*;
 
 public class TestServiceImplTest {
     private TestsRepository repository;
     private Tests tests;
-    private Set<String> taskId;
+    private List<String> taskId = new LinkedList<>();
 
     private Tests getSaved() {
         return this.repository.getAll().iterator().next();
@@ -36,7 +33,7 @@ public class TestServiceImplTest {
     @Test
     public void create() {
         Tests info = this.repository.create(this.tests);
-        System.out.println("In create, created = " + info);
+        //System.out.println("In create, created = " + info);
         Assert.assertSame(info, this.tests);
     }
 
@@ -44,7 +41,7 @@ public class TestServiceImplTest {
     public void read() {
         Tests saved = getSaved();
         Tests read = this.repository.read(saved.getTestId());
-        System.out.println("In read, read = " + read);
+        //System.out.println("In read, read = " + read);
         Assert.assertEquals(saved, read);
     }
 
@@ -52,7 +49,7 @@ public class TestServiceImplTest {
     public void update() {
         boolean updateString = true;
         Tests test = new Tests.Builder().copy(getSaved()).complete(updateString).build();
-        System.out.println("In update, about_to_updated = " + test);
+        //System.out.println("In update, about_to_updated = " + test);
         this.repository.update(test);
         Assert.assertSame(updateString, test.getComplete());
     }
@@ -67,6 +64,6 @@ public class TestServiceImplTest {
     @Test
     public void d_getAll() {
         Set<Tests> all = this.repository.getAll();
-        System.out.println("In getAll, all = " + all);
+        //System.out.println("In getAll, all = " + all);
     }
 }

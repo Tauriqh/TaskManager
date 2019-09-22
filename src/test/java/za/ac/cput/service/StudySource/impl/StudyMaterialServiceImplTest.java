@@ -31,7 +31,7 @@ public class StudyMaterialServiceImplTest {
     @Test
     public void create() {
         StudyMaterial info = this.repository.create(this.studyMaterial);
-        System.out.println("In create, created = " + info);
+        //System.out.println("In create, created = " + info);
         Assert.assertSame(info, this.studyMaterial);
     }
 
@@ -39,7 +39,7 @@ public class StudyMaterialServiceImplTest {
     public void read() {
         StudyMaterial saved = getSaved();
         StudyMaterial read = this.repository.read(saved.getMaterialId());
-        System.out.println("In read, read = " + read);
+        //System.out.println("In read, read = " + read);
         Assert.assertEquals(saved, read);
     }
 
@@ -47,7 +47,7 @@ public class StudyMaterialServiceImplTest {
     public void update() {
         String updateString = "Harry Potter";
         StudyMaterial studyMaterial = new StudyMaterial.Builder().copy(getSaved()).materialDesc(updateString).build();
-        System.out.println("In update, about_to_updated = " + studyMaterial);
+        //System.out.println("In update, about_to_updated = " + studyMaterial);
         this.repository.update(studyMaterial);
         Assert.assertSame(updateString, studyMaterial.getMaterialDesc());
     }
@@ -62,6 +62,6 @@ public class StudyMaterialServiceImplTest {
     @Test
     public void d_getAll() {
         Set<StudyMaterial> all = this.repository.getAll();
-        System.out.println("In getAll, all = " + all);
+        //System.out.println("In getAll, all = " + all);
     }
 }

@@ -7,6 +7,7 @@ import za.ac.cput.Domain.SpecificTasks.Exam;
 import za.ac.cput.Factory.SpecificTasks.ExamFactory;
 import za.ac.cput.service.SpecificTasks.ExamService;
 
+import java.util.List;
 import java.util.Set;
 
 @RestController
@@ -18,7 +19,7 @@ public class ExamController {
 
     @PostMapping("/create/{examId, examName, dueDate, complete, materialId, tasks}")
     @ResponseBody
-    public Exam create(@PathVariable String examId, String examName, String dueDate, boolean complete, String materialId, Set<String> tasks) {
+    public Exam create(@PathVariable String examId, String examName, String dueDate, boolean complete, String materialId, List<String> tasks) {
         Exam exam = ExamFactory.buildExam(examId, examName, dueDate, complete, materialId, tasks);
         return service.create(exam);
     }

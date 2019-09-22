@@ -8,13 +8,15 @@ import za.ac.cput.Factory.SpecificTasks.TestsFactory;
 import za.ac.cput.repository.SpecificTasks.TestsRepository;
 import za.ac.cput.repository.SpecificTasks.impl.TestsRepositoryImpl;
 
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Set;
 
 public class TestsRepositoryImplTest {
 
     private TestsRepository repository;
     private Tests tests;
-    private Set<String> taskId;
+    private List<String> taskId = new LinkedList<>();
 
     private Tests getSaved() {
         Set<Tests> saved = this.repository.getAll();
@@ -42,7 +44,7 @@ public class TestsRepositoryImplTest {
     public void read() {
         Tests saved = getSaved();
         Tests read = this.repository.read(saved.getTestId());
-        System.out.println("In read, read = " + read);
+        //System.out.println("In read, read = " + read);
         Assert.assertEquals(saved, read);
         d_getAll();
     }
@@ -51,9 +53,9 @@ public class TestsRepositoryImplTest {
     public void update() {
         boolean updateString = true;
         Tests test = new Tests.Builder().copy(getSaved()).complete(updateString).build();
-        System.out.println("In update, about_to_updated = " + test);
+        //System.out.println("In update, about_to_updated = " + test);
         Tests updated = this.repository.update(test);
-        System.out.println("In update, updated = " + updated);
+        //System.out.println("In update, updated = " + updated);
         Assert.assertSame(updateString, updated.getComplete());
         d_getAll();
     }
@@ -71,7 +73,7 @@ public class TestsRepositoryImplTest {
     @Test
     public void d_getAll() {
         Set<Tests> all = this.repository.getAll();
-        System.out.println("In getAll, all = " + all);
+        //System.out.println("In getAll, all = " + all);
         //Assert.assertEquals(1, users.size());
     }
 }
