@@ -3,65 +3,56 @@ package za.ac.cput.controller.userDetails;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
-import za.ac.cput.Domain.UserDetails.User;
-import za.ac.cput.Factory.UserDetails.UserFactory;
-import za.ac.cput.service.UserDetails.UserService;
+import za.ac.cput.WebValidator;
+import za.ac.cput.domain.userDetails.User;
+import za.ac.cput.exception.RecordNotFoundException;
+import za.ac.cput.service.userDetails.impl.UserServiceImpl;
 
-import java.util.Set;
+import javax.swing.*;
+import java.util.List;
+import java.util.Optional;
 
-@RestController
+
+@Controller
 @RequestMapping("/user")
 public class UserController {
+
     @Autowired
-    @Qualifier("userServiceImpl")
-    private UserService service;
+    UserServiceImpl service;
 
-    @PostMapping("/create/{firstName},{lastName}")
-    //@RequestMapping(value="/create/{firstName}/{lastName}", method=RequestMethod.POST)
-    @ResponseBody
-    public User create(@PathVariable String firstName, @PathVariable String lastName) {
-        User user = UserFactory.buildUser(firstName, lastName);
-        return service.create(user);
-        //return firstName + lastName;
+    @RequestMapping
+    public String getAllUsers(Model model){
+        List<User> list = service.getAllUsers();
+
+        model.addAttribute("users", list);
+        return "userView";
     }
 
-    /* @PostMapping("/create/**")
-    @ResponseBody
-    public HttpServletRequest create(@PathVariable HttpServletRequest request) {
-        String ii = Ser
-        User user = UserFactory.buildUser(firstName, lastName);
-    //return service.create(user);
-        return request;
-    }*/
-
-    /*@PostMapping("/create")
-    @ResponseBody
-    public User create(@RequestBody User user){
-        return this.service.create(user);
-    }*/
-
-    @PutMapping("/update")
-    @ResponseBody
-    public User update(@RequestBody User user) {
-        return this.service.update(user);
+    @RequestMapping(path = {"/edit", "/edit/{id}"})
+    public String editUserById(Model model, @PathVariable("id") Optional<Long> id) throws RecordNotFoundException{
+        if (id.isPresent()) {
+            User entity = service.getUserById(id.get());
+            model.addAttribute("user", entity);
+        } else {
+            model.addAttribute("user", new User());
+        }
+        return "editUserView";
     }
 
-    @GetMapping("/delete/{id}")
-    @ResponseBody
-    public void delete(@PathVariable String id) {
-        this.service.delete(id);
+    @RequestMapping(path = "/delete/{id}")
+    public String deleteUserById(Model model, @PathVariable("id") Long id) throws RecordNotFoundException {
+        service.deleteUserById(id);
+        return "redirect:/user";
     }
 
-    @GetMapping("/read/{id}")
-    @ResponseBody
-    public User read(@PathVariable String id) {
-        return this.service.read(id);
-    }
-
-    @GetMapping("/read/all")
-    @ResponseBody
-    public Set<User> getAll() {
-        return this.service.getAll();
+    @RequestMapping(path = "/createUser", method = RequestMethod.POST)
+    public String createOrUpdateUser(User user)
+    {
+        service.createOrUpdateUser(user);
+        return "redirect:/user";
     }
 }

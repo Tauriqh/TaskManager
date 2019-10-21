@@ -1,10 +1,11 @@
-package za.ac.cput.repository.Tasks;
+package za.ac.cput.repository.tasks;
 
-import za.ac.cput.Domain.Tasks.Task;
-import za.ac.cput.repository.IRepository;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+import za.ac.cput.domain.tasks.Task;
 
-import java.util.Set;
 
-public interface TaskRepository extends IRepository<Task, String> {
-    Set<Task> getAll();
+@Repository
+public interface TaskRepository extends CrudRepository<Task, Long> {
+
 }

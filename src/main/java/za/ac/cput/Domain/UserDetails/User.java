@@ -1,87 +1,63 @@
-package za.ac.cput.Domain.UserDetails;
+package za.ac.cput.domain.userDetails;
 
-import org.springframework.boot.autoconfigure.domain.EntityScan;
+import javax.persistence.*;
 
-import java.util.Objects;
-
-@EntityScan
+@Entity
+@Table(name="TBL_USERS")
 public class User {
-    private String userId;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(name="first_name")
     private String firstName;
+
+    @Column(name="last_name")
     private String lastName;
 
-    private User(){}
+    @Column(name="email", nullable=false, length=200)
+    private String email;
 
-    private User(Builder builder) {
-        this.userId = builder.userId;
-        this.firstName = builder.firstName;
-        this.lastName = builder.lastName;
+    public Long getId() {
+        return id;
     }
 
-    public String getUserId() {
-        return userId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getFirstName() {
         return firstName;
     }
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
     public String getLastName() {
         return lastName;
     }
 
-    public static class Builder {
-        private String userId;
-        private String firstName;
-        private String lastName;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 
-        public Builder userId( String userId) {
-            this.userId = userId;
-            return this;
-        }
+    public String getEmail() {
+        return email;
+    }
 
-        public Builder firstName( String firstName) {
-            this.firstName = firstName;
-            return this;
-        }
-
-        public Builder lastName( String lastName) {
-            this.lastName = lastName;
-            return this;
-        }
-
-        public Builder copy(User user) {
-            this.userId = user.userId;
-            this.firstName = user.firstName;
-            this.lastName = user.lastName;
-            return this;
-        }
-
-        public User build() {
-            return new User(this);
-        }
-
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "userId=" + userId + '\'' +
+                "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
                 '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        User user = (User) o;
-        return userId.equals(user.userId);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(userId);
     }
 }

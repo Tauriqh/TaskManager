@@ -1,49 +1,64 @@
 package za.ac.cput.controller.tasks;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import za.ac.cput.Domain.Tasks.Task;
-import za.ac.cput.Factory.Tasks.TaskFactory;
-import za.ac.cput.service.Tasks.TaskService;
+import za.ac.cput.domain.tasks.Task;
+import za.ac.cput.exception.RecordNotFoundException;
+import za.ac.cput.service.tasks.impl.TaskServiceImpl;
 
+import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 
-@RestController
+@Controller
 @RequestMapping("/task")
 public class TaskController {
+
     @Autowired
-    @Qualifier("taskServiceImpl")
-    private TaskService service;
+    TaskServiceImpl service;
 
-    @PostMapping("/create/{taskId, taskDesc, taskDueDate}")
-    @ResponseBody
-    public Task create(@PathVariable String taskId, String taskDesc, String taskDueDate) {
-        Task task = TaskFactory.buildTask(taskId, taskDesc, taskDueDate);
-        return service.create(task);
+    @RequestMapping
+    public String getAllTasks(Model model){
+        List<Task> list = service.getAllTasks();
+
+        model.addAttribute("tasks", list);
+        return "taskView";
     }
 
-    @PostMapping("/update")
-    @ResponseBody
-    public Task update(Task task) {
-        return service.update(task);
+    /*@RequestMapping(path = {"/edit", "/edit/{id}"})
+    public String editUserById(Model model, @PathVariable("id") Optional<Long> id) throws RecordNotFoundException{
+        if (id.isPresent()) {
+            User entity = service.getUserById(id.get());
+            model.addAttribute("user", entity);
+        } else {
+            model.addAttribute("user", new User());
+        }
+        return "editUserView";
+    }*/
+
+    @RequestMapping(path = {"/edit", "/edit/{id}"})
+    public String editTaskById(Model model, @PathVariable("id") Optional<Long> id) throws RecordNotFoundException {
+        if (id.isPresent()) {
+            Task entity = service.getTaskById(id.get());
+            model.addAttribute("task", entity);
+        } else {
+            model.addAttribute("task", new Task());
+        }
+        return "editTaskView";
     }
 
-    @GetMapping("/delete/{id}")
-    @ResponseBody
-    public void delete(@PathVariable String id) {
-        service.delete(id);
+    @RequestMapping(path = "/delete/{id}")
+    public String deleteTaskById(Model model, @PathVariable("id") Long id) throws RecordNotFoundException {
+        service.deleteTaskById(id);
+        return "redirect:/task";
     }
 
-    @GetMapping("/read/{id}")
-    @ResponseBody
-    public Task read(@PathVariable String id) {
-        return service.read(id);
-    }
-
-    @GetMapping("/read/all")
-    @ResponseBody
-    public Set<Task> getAll() {
-        return service.getAll();
+    @RequestMapping(path = "/createTask", method = RequestMethod.POST)
+    public String createOrUpdateTask(Task task)
+    {
+        service.createOrUpdateTask(task);
+        return "redirect:/task";
     }
 }

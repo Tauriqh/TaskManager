@@ -1,45 +1,78 @@
-package za.ac.cput.service.Tasks.impl;
+package za.ac.cput.service.tasks.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
-import za.ac.cput.Domain.Tasks.Task;
-import za.ac.cput.repository.Tasks.TaskRepository;
-import za.ac.cput.service.Tasks.TaskService;
+import za.ac.cput.domain.tasks.Task;
+import za.ac.cput.exception.RecordNotFoundException;
+import za.ac.cput.repository.tasks.TaskRepository;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.Optional;
 
-@Service("taskServiceImpl")
-public class TaskServiceImpl implements TaskService {
+
+@Service
+public class TaskServiceImpl {
+
     @Autowired
-    @Qualifier("taskRepository")
+    TaskRepository repository;
 
-    private TaskRepository repository;
+    public List<Task> getAllTasks(){
+        List<Task> result = (List<Task>) repository.findAll();
 
-    @Override
-    public Task create(Task task) {
-        return repository.create(task);
+        if(result.size() > 0) {
+            return result;
+        } else {
+            return new ArrayList<Task>();
+        }
     }
 
-    @Override
-    public Task update(Task task) {
-        return repository.update(task);
+    public Task getTaskById(Long id) throws RecordNotFoundException {
+        Optional<Task> task = repository.findById(id);
+
+        if(task.isPresent()) {
+            return task.get();
+        } else {
+            throw new RecordNotFoundException("No task record exist for given id");
+        }
     }
 
-    @Override
-    public void delete(String s) {
-        repository.delete(s);
+    public Task createOrUpdateTask(Task entity){
+        if(entity.getId()  == null)
+        {
+            entity = repository.save(entity);
+
+            return entity;
+        }
+        else
+        {
+            Optional<Task> task = repository.findById(entity.getId());
+
+            if(task.isPresent())
+            {
+                Task newEntity = task.get();
+                newEntity.setTaskDesc(entity.getTaskDesc());
+                newEntity.setTaskDueDate(entity.getTaskDueDate());
+
+                newEntity = repository.save(newEntity);
+
+                return newEntity;
+            } else {
+                entity = repository.save(entity);
+
+                return entity;
+            }
+        }
     }
 
-    @Override
-    public Task read(String s) {
-        return repository.read(s);
-    }
+    public void deleteTaskById(Long id) throws RecordNotFoundException{
+        Optional<Task> task = repository.findById(id);
 
-    @Override
-    public Set<Task> getAll() {
-        return repository.getAll();
+        if(task.isPresent())
+        {
+            repository.deleteById(id);
+        } else {
+            throw new RecordNotFoundException("No task record exist for given id");
+        }
     }
 }

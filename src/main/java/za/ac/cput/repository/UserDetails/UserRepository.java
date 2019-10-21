@@ -1,10 +1,11 @@
-package za.ac.cput.repository.UserDetails;
+package za.ac.cput.repository.userDetails;
 
-import za.ac.cput.Domain.UserDetails.User;
-import za.ac.cput.repository.IRepository;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+import za.ac.cput.domain.userDetails.User;
 
-import java.util.Set;
 
-public interface UserRepository extends IRepository<User, String> {
-    Set<User> getAll();
+@Repository
+public interface UserRepository extends CrudRepository<User, Long> {
+
 }

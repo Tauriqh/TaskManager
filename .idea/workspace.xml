@@ -15,99 +15,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/security/TaskManagerApplicationSecurity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#984#985#0" expanded="true" />
-                <element signature="e#1034#1035#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/controller/userDetails/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1513#1514#0" expanded="true" />
-                <element signature="e#1653#1654#0" expanded="true" />
-                <element signature="e#1794#1795#0" expanded="true" />
-                <element signature="e#1918#1919#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="221">
+              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/repository/implementation/UserDetails/UserRepositoryImplTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/taskView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+            <state relative-caret-position="374">
+              <caret line="22" column="61" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/controller/userDetails/UserControllerTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/Factory/UserDetails/UserFactoryTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/homeView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state>
+              <caret column="15" selection-start-column="15" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/service/UserDetails/impl/UserServiceImplTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editUserView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+            <state relative-caret-position="765">
+              <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/util/Misc.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/WebValidator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#114#115#0" expanded="true" />
-                <element signature="e#165#166#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/Domain/UserDetails/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/Factory/UserDetails/UserFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,6 +77,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -128,6 +86,14 @@
     <findStrings>
       <find>set</find>
       <find>List</find>
+      <find>request</find>
+      <find>resour</find>
+      <find>setid</find>
+      <find>tbl_emplo</find>
+      <find>emp</find>
+      <find>empl</find>
+      <find>emplo</find>
+      <find>user</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -136,56 +102,56 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/Domain/SpecificTasks/Tests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/Factory/SpecificTasks/TestsFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/controller/specificTasks/TestsController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/controller/specificTasks/TestsControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/Factory/SpecificTasks/ProjectFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/Factory/SpecificTasks/ProjectFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/Domain/SpecificTasks/Project.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/controller/specificTasks/ProjectController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/controller/specificTasks/ProjectControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/Factory/SpecificTasks/ExamFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/Domain/SpecificTasks/Exam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/controller/specificTasks/ExamController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/Domain/SpecificTasks/Assignment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/Factory/SpecificTasks/AssignmentFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/Factory/SpecificTasks/AssignmentFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/controller/specificTasks/ExamControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/Factory/SpecificTasks/ExamFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/service/SpecificTasks/impl/AssignmentServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/implementation/SpecificTasks/AssignmentRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/implementation/SpecificTasks/ExamRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/implementation/SpecificTasks/ProjectRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/implementation/SpecificTasks/TestsRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/implementation/StudySource/StudyMaterialRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/implementation/Tasks/TaskRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/implementation/Team/ProjectTeamMemberRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/implementation/Team/TeamMemberRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/implementation/Team/TeamMemberTaskRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/implementation/UserDetails/EmailRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/service/SpecificTasks/impl/ExamServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/service/StudySource/impl/StudyMaterialServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/service/Tasks/impl/TaskServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/service/Team/impl/ProjectTeamMemberServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/service/Team/impl/TeamMemberServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/service/Team/impl/TeamMemberTaskServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/service/UserDetails/impl/EmailServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/service/SpecificTasks/impl/ProjectServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/service/SpecificTasks/impl/TestServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/controller/specificTasks/AssignmentControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/resourses/application.properties" />
-        <option value="$PROJECT_DIR$/src/resourses/templates/index.html" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/controller/specificTasks/AssignmentController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/security/TaskManagerApplicationSecurity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/util/misc.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/Factory/UserDetails/UserFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/implementation/UserDetails/UserRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/controller/userDetails/UserControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/Factory/UserDetails/UserFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/za/ac/cput/service/UserDetails/impl/UserServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/StudySource/StudyMaterialFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/SpecificTasks/AssignmentFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/SpecificTasks/ExamFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/SpecificTasks/ProjectFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/SpecificTasks/TestsFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/Tasks/TaskFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/Team/ProjectTeamMemberFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/Team/TeamMemberFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/Team/TeamMemberTaskFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/UserDetails/EmailFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/UserDetails/UserFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/UserDetails/impl/UserRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/users/EmployeeRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/UserDetails/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/UserDetails/EmailRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/Team/TeamMemberTaskRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/Team/TeamMemberRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/Team/ProjectTeamMemberRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/Tasks/TaskRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/StudySource/StudyMaterialRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/SpecificTasks/TestsRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/SpecificTasks/ProjectRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/SpecificTasks/ExamRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/SpecificTasks/AssignmentRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/TaskManagerApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/domain/userDetails/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/domain/tasks/Task.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/service/UserDetails/EmailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/service/Tasks/impl/TaskServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/service/UserDetails/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/service/userDetails/sad.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/service/tasks/sd.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/controller/users/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/controller/users/tasks/TaskController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/controller/users/EmployeeController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/editUSer.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/abc.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/editUser.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/editTask.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/welcome.html" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/controller/tasks/TaskController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/editTaskView.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/schema.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/controller/homeController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/homeView.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/userView.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/taskView.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/data.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/WebValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/editUserView.html" />
         <option value="$PROJECT_DIR$/src/main/java/za/ac/cput/controller/userDetails/UserController.java" />
       </list>
     </option>
@@ -197,10 +163,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="978" />
+    <option name="height" value="1058" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -208,7 +175,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -266,44 +232,51 @@
               <item name="TaskManager" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cput" type="462c0819:PsiDirectoryNode" />
-              <item name="Factory" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TaskManager" type="b2602c69:ProjectViewProjectNode" />
               <item name="TaskManager" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cput" type="462c0819:PsiDirectoryNode" />
-              <item name="Factory" type="462c0819:PsiDirectoryNode" />
-              <item name="UserDetails" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TaskManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TaskManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cput" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TaskManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TaskManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resourses" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../KyleAssignment11/LearnerManagementSystem" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tauri\Documents\TaskManager\src\main\resources\templates" />
+      <recent name="C:\Users\tauri\Documents\TaskManager\src\main\resources\templates\users" />
+      <recent name="C:\Users\tauri\Documents\GitHub\TaskManager\src\resourses" />
+      <recent name="C:\Users\tauri\Documents\GitHub\TaskManager\src\main\java\za\ac\cput\controller\userDetails" />
+      <recent name="C:\Users\tauri\Documents\GitHub\TaskManager\src\main\java\za\ac\cput\WEB-INF" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="za.ac.cput.controller.users.tasks" />
+      <recent name="za.ac.cput.controller.users" />
+      <recent name="za.ac.cput.util" />
+      <recent name="za.ac.cput.service.users.impl" />
+      <recent name="za.ac.cput.repository.impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tauri\Documents\TaskManager\src\main\java\za\ac\cput\controller" />
+      <recent name="C:\Users\tauri\Documents\TaskManager\src\main\java\za\ac\cput\service" />
+      <recent name="C:\Users\tauri\Documents\TaskManager\src\main\java\za\ac\cput\repository" />
+      <recent name="C:\Users\tauri\Documents\TaskManager\src\main\java\za\ac\cput\factory" />
+      <recent name="C:\Users\tauri\Documents\TaskManager\src\main\java\za\ac\cput\domain" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -320,7 +293,7 @@
   <component name="RunManager" selected="Application.TaskManagerApplication">
     <configuration name="TaskManagerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="za.ac.cput.TaskManagerApplication" />
-      <module name="TaskManager" />
+      <module name="ConnectToGUI" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="za.ac.cput.*" />
@@ -331,59 +304,62 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AssignmentControllerTest.testGetAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TaskManager" />
+    <configuration name="SecurityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ConnectToGUI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="za.ac.cput.controller.specificTasks.*" />
+          <option name="PATTERN" value="za.ac.cput.security.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="za.ac.cput.controller.specificTasks" />
-      <option name="MAIN_CLASS_NAME" value="za.ac.cput.controller.specificTasks.AssignmentControllerTest" />
-      <option name="METHOD_NAME" value="testGetAll" />
+      <option name="PACKAGE_NAME" value="za.ac.cput.security" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.security.SecurityTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecurityTest.whenCorrectCredentialsWillBe200" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ConnectToGUI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.security.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.security" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.security.SecurityTest" />
+      <option name="METHOD_NAME" value="whenCorrectCredentialsWillBe200" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="za.ac.cput.Factory in TaskManager" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TaskManager" />
+    <configuration name="SecurityTest.whenIncorrectCredentialsWillBe401" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ConnectToGUI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="za.ac.cput.Factory.*" />
+          <option name="PATTERN" value="za.ac.cput.security.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="za.ac.cput.Factory" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="za.ac.cput.security" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.security.SecurityTest" />
+      <option name="METHOD_NAME" value="whenIncorrectCredentialsWillBe401" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="za.ac.cput.controller in TaskManager" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TaskManager" />
+    <configuration name="za.ac.cput in TaskManager" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ConnectToGUI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="za.ac.cput.controller.*" />
+          <option name="PATTERN" value="za.ac.cput.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="za.ac.cput.controller" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="za.ac.cput.repository.implementation in TaskManager" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TaskManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="za.ac.cput.repository.implementation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="za.ac.cput.repository.implementation" />
+      <option name="PACKAGE_NAME" value="za.ac.cput" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -392,10 +368,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.TaskManagerApplication" />
-        <item itemvalue="JUnit.za.ac.cput.repository.implementation in TaskManager" />
-        <item itemvalue="JUnit.za.ac.cput.Factory in TaskManager" />
-        <item itemvalue="JUnit.za.ac.cput.controller in TaskManager" />
-        <item itemvalue="JUnit.AssignmentControllerTest.testGetAll" />
+        <item itemvalue="JUnit.SecurityTest.whenCorrectCredentialsWillBe200" />
+        <item itemvalue="JUnit.za.ac.cput in TaskManager" />
+        <item itemvalue="JUnit.SecurityTest.whenIncorrectCredentialsWillBe401" />
+        <item itemvalue="JUnit.SecurityTest" />
       </list>
     </recent_temporary>
   </component>
@@ -413,27 +389,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="za_ac_cput_repository_implementation_in_TaskManager - 2019.09.22 at 18h 03m 33s.xml">
-      <configuration name="za.ac.cput.repository.implementation in TaskManager" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="za_ac_cput_Factory_in_TaskManager - 2019.09.22 at 18h 03m 36s.xml">
-      <configuration name="za.ac.cput.Factory in TaskManager" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="za_ac_cput_controller_in_TaskManager - 2019.09.22 at 18h 04m 49s.xml">
-      <configuration name="za.ac.cput.controller in TaskManager" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AssignmentControllerTest - 2019.09.22 at 18h 05m 21s.xml">
-      <configuration name="AssignmentControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AssignmentControllerTest_testGetAll - 2019.09.22 at 18h 10m 44s.xml">
-      <configuration name="AssignmentControllerTest.testGetAll" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AssignmentControllerTest_testGetAll - 2019.09.22 at 18h 13m 19s.xml">
-      <configuration name="AssignmentControllerTest.testGetAll" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AssignmentControllerTest_testGetAll - 2019.09.22 at 18h 18m 50s.xml">
-      <configuration name="AssignmentControllerTest.testGetAll" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="za_ac_cput_Factory_in_TaskManager - 2019.09.22 at 18h 23m 14s.xml">
       <configuration name="za.ac.cput.Factory in TaskManager" configurationId="JUnit" />
     </history-entry>
@@ -443,12 +398,42 @@
     <history-entry file="za_ac_cput_controller_in_TaskManager - 2019.09.22 at 18h 23m 18s.xml">
       <configuration name="za.ac.cput.controller in TaskManager" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SecurityTest_whenCorrectCredentialsWillBe200 - 2019.09.30 at 09h 57m 29s.xml">
+      <configuration name="SecurityTest.whenCorrectCredentialsWillBe200" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SecurityTest - 2019.09.30 at 09h 58m 15s.xml">
+      <configuration name="SecurityTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SecurityTest_whenIncorrectCredentialsWillBe401 - 2019.09.30 at 10h 00m 17s.xml">
+      <configuration name="SecurityTest.whenIncorrectCredentialsWillBe401" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SecurityTest_whenCorrectCredentialsWillBe200 - 2019.09.30 at 10h 08m 13s.xml">
+      <configuration name="SecurityTest.whenCorrectCredentialsWillBe200" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="za_ac_cput_in_TaskManager - 2019.09.30 at 10h 09m 13s.xml">
+      <configuration name="za.ac.cput in TaskManager" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SecurityTest_whenCorrectCredentialsWillBe200 - 2019.10.16 at 19h 38m 32s.xml">
+      <configuration name="SecurityTest.whenCorrectCredentialsWillBe200" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SecurityTest_whenCorrectCredentialsWillBe200 - 2019.10.17 at 21h 04m 24s.xml">
+      <configuration name="SecurityTest.whenCorrectCredentialsWillBe200" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="781" height="830" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.52427185" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14228188" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -456,16 +441,16 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33524355" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24504249" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32932165" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32822758" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32719547" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32056892" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -476,402 +461,208 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Designer" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.17919463" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.3286119" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27771854" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24593717" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32932165" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32822758" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32056892" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout-to-restore>
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.jsp" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/repository/implementation/SpecificTasks/ProjectRepositoryImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/repository/studySource/StudyMaterialRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/repository/specificTasks/ExamRepository.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/GenerationType.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="72" column="10" selection-start-line="72" selection-start-column="10" selection-end-line="72" selection-end-column="10" />
+        <state relative-caret-position="119">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/repository/implementation/SpecificTasks/TestsRepositoryImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/domain/userDetails/Email.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/domain/team/ProjectTeamMember.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/domain/team/TeamMember.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/domain/team/TeamMemberTask.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/domain/studySource/StudyMaterial.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/domain/SpecificTasks/Assignment.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/domain/SpecificTasks/Exam.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/domain/SpecificTasks/Tests.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/domain/SpecificTasks/Project.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/factory/ResponseObjFactory.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/service/tasks/TaskService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/service/userDetails/UserService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/service/userDetails/impl/EmailServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/service/userDetails/EmailService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/service/tasks/impl/TaskServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="75" column="10" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/repository/implementation/StudySource/StudyMaterialRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="70" column="10" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/repository/implementation/Tasks/TaskRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="70" column="10" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/repository/implementation/Team/ProjectTeamMemberRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="70" column="10" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/repository/implementation/Team/TeamMemberRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="70" column="10" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/repository/implementation/Team/TeamMemberTaskRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="70" column="10" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/repository/implementation/UserDetails/EmailRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="74" column="10" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/service/SpecificTasks/impl/AssignmentServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-237">
-          <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+        <state relative-caret-position="1258">
+          <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/service/SpecificTasks/impl/ProjectServiceImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/repository/tasks/TaskRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/service/SpecificTasks/impl/TestServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="43" column="10" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/service/SpecificTasks/impl/ExamServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/service/StudySource/impl/StudyMaterialServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="64" column="10" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/service/Tasks/impl/TaskServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="64" column="10" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/service/Team/impl/ProjectTeamMemberServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="65" column="10" selection-start-line="65" selection-start-column="10" selection-end-line="65" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/service/Team/impl/TeamMemberServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="65" column="10" selection-start-line="65" selection-start-column="10" selection-end-line="65" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/service/Team/impl/TeamMemberTaskServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/service/UserDetails/impl/EmailServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="62" column="10" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/controller/specificTasks/ExamController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="22" column="98" lean-forward="true" selection-start-line="22" selection-start-column="98" selection-end-line="22" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/controller/specificTasks/ProjectController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="21" column="114" lean-forward="true" selection-start-line="21" selection-start-column="114" selection-end-line="21" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/controller/specificTasks/TestsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/controller/studySources/StudyMaterialController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/controller/tasks/TaskController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/controller/team/TeamMemberController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/controller/team/ProjectTeamMemberController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/controller/team/TeamMemberTaskController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/controller/userDetails/EmailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/controller/specificTasks/AssignmentControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="49" column="44" lean-forward="true" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+        <state relative-caret-position="119">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resourses/banner.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resourses/application.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/service/userDetails/sad.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/service/userDetails/impl/s.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/service/tasks/sd.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/service/userDetails/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+        <state relative-caret-position="297">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resourses/META-INF/resources/frontend/src/README">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resourses/META-INF/resources/frontend/styles/README">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitattributes">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ADP3Assignment6UMLClassDiagram.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TaskManager.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="28" lean-forward="true" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/service/IService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/service/users/impl/EmployeeServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/domain/users/Employee.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/DKSoftware.png" />
+    <entry file="file://$PROJECT_DIR$/Domain.iml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/TaskManagerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        <state relative-caret-position="238">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/controller/specificTasks/AssignmentController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/controller/users/UserController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/controller/users/controller/a.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/controller/userDetails/EmailController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/controller/users/EmployeeController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/list-employees.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/abc.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/controller/tasks/TaskController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1352#1353#0" expanded="true" />
-            <element signature="e#1401#1402#0" expanded="true" />
-            <element signature="e#1502#1503#0" expanded="true" />
-            <element signature="e#1536#1537#0" expanded="true" />
-            <element signature="e#1640#1641#0" expanded="true" />
-            <element signature="e#1679#1680#0" expanded="true" />
-            <element signature="e#1766#1767#0" expanded="true" />
-            <element signature="e#1805#1806#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/security/TaskManagerApplicationSecurity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#984#985#0" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/util/Misc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#114#115#0" expanded="true" />
-            <element signature="e#165#166#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/Domain/UserDetails/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/Factory/UserDetails/UserFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        <state relative-caret-position="646">
+          <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/repository/implementation/UserDetails/UserRepositoryImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/domain/userDetails/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+        <state relative-caret-position="85">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/controller/userDetails/UserControllerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/welcome.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editTaskView.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+        <state relative-caret-position="408">
+          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/Factory/UserDetails/UserFactoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/domain/tasks/Task.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="272">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/za/ac/cput/service/UserDetails/impl/UserServiceImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/add-edit-employee.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/schema.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+        <state relative-caret-position="204">
+          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resourses/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userView.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        <state relative-caret-position="357">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/controller/homeController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/controller/userDetails/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+        <state relative-caret-position="221">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/taskView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="61" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/homeView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editUserView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/WebValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1513#1514#0" expanded="true" />
-            <element signature="e#1653#1654#0" expanded="true" />
-            <element signature="e#1794#1795#0" expanded="true" />
-            <element signature="e#1918#1919#0" expanded="true" />
           </folding>
         </state>
       </provider>

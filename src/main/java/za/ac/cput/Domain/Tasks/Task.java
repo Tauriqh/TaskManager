@@ -1,87 +1,51 @@
-package za.ac.cput.Domain.Tasks;
+package za.ac.cput.domain.tasks;
 
-import org.springframework.boot.autoconfigure.domain.EntityScan;
+import javax.persistence.*;
 
-import java.util.Objects;
-
-@EntityScan
+@Entity
+@Table(name="TBL_TASKS")
 public class Task {
-    private String taskId;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(name="task_description")
     private String taskDesc;
+
+    @Column(name="task_due_date")
     private String taskDueDate;
 
-    private Task(){}
-
-    private Task(Builder builder) {
-        this.taskId = builder.taskId;
-        this.taskDesc = builder.taskDesc;
-        this.taskDueDate = builder.taskDueDate;
+    public Long getId() {
+        return id;
     }
 
-    public String getTaskId() {
-        return taskId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getTaskDesc() {
         return taskDesc;
     }
 
+    public void setTaskDesc(String taskDesc) {
+        this.taskDesc = taskDesc;
+    }
+
     public String getTaskDueDate() {
         return taskDueDate;
     }
 
-    public static class Builder {
-        private String taskId;
-        private String taskDesc;
-        private String taskDueDate;
-
-        public Builder taskId( String taskId) {
-            this.taskId = taskId;
-            return this;
-        }
-
-        public Builder taskDesc( String taskDesc) {
-            this.taskDesc = taskDesc;
-            return this;
-        }
-
-        public Builder taskDueDate( String taskDueDate) {
-            this.taskDueDate = taskDueDate;
-            return this;
-        }
-
-        public Builder copy(Task task) {
-            this.taskId = task.taskId;
-            this.taskDesc = task.taskDesc;
-            this.taskDueDate = task.taskDueDate;
-            return this;
-        }
-
-        public Task build() {
-            return new Task(this);
-        }
-
+    public void setTaskDueDate(String taskDueDate) {
+        this.taskDueDate = taskDueDate;
     }
 
     @Override
     public String toString() {
         return "Task{" +
-                "taskId=" + taskId + '\'' +
+                "id=" + id +
                 ", taskDesc='" + taskDesc + '\'' +
                 ", taskDueDate='" + taskDueDate + '\'' +
                 '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Task task = (Task) o;
-        return taskId.equals(task.taskId);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(taskId);
     }
 }
